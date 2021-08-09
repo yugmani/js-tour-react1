@@ -16,3 +16,25 @@ h1 {
   color: white;
 }
 
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: black;
+  color: gray;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

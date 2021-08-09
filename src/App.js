@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
+import Number from './Number';
 
 export default function App() {
   // let name = 'Yooog';""
@@ -31,9 +32,12 @@ export default function App() {
       <h1 style={mystyle}>Hi, I am {name}!</h1>
       <h3 style={h3style}>I am from {country}.</h3>
       <p style={hobbystyle}>I love {hobby}!</p>
-      <button onClick={() => setName('yoog')}>Change Name</button>
-      <button onClick={() => setCountry('USA')}>Change Country</button>
-      <button onClick={() => setHobby('Coding')}>Change Hobby</button>
+      <div className="btn">
+        <button onClick={() => setName('yoog')}>Change Name</button>
+        <button onClick={() => setCountry('USA')}>Change Country</button>
+        <button onClick={() => setHobby('Coding')}>Change Hobby</button>
+      </div>
+      <Number />
     </div>
   );
 }
