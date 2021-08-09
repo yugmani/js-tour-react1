@@ -5,7 +5,9 @@ export default function Number() {
 
   return (
     <div className="number">
-      <h1>Number {number}</h1>
+      <h1>
+        Number <span className="box">{number}</span>
+      </h1>
       <div className="btn">
         <button onClick={() => setNumber(number + 1)}>Increment</button>
         <button onClick={() => setNumber(number - 1)}>Decrement</button>
